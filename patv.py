@@ -48,7 +48,7 @@ def main():
         current = start
         while current != end:
 
-            # In some specific Linux Kernels, there is a page dedicated to [vsy]
+            # In some specific Linux Kernels, there is a page dedicated to [vsyscall]
             # This page has a quite irregular virtual address that or:
             # 1: Leads to some thrash Page Table Entries
             # 2: Leads to nowhere, effectively breaking the code
