@@ -79,11 +79,11 @@ def main():
     print("Estimated RAM usage: {} KB".format(present*4))
     print("Estimated TOTAL usage: {} KB".format((present+not_present+1) * 4))
     print("=================== Pages that are not in RAM [{}]===================".format(not_present))
-    for page in pages_not_in_ram:
-        print_page(page)
+    for i,page in enumerate(pages_not_in_ram):
+        print_page(page, i)
     print("=================== Pages in RAM [{}]===================".format(present))
-    for page in pages_in_ram:
-        print_page(page)
+    for i,page in enumerate(pages_in_ram):
+        print_page(page, i)
 
 
 # Helper functions down below
@@ -110,11 +110,11 @@ def is_present(entry):
 
 
 # Prints relevant info about a Vaddr
-def print_page(page):
+def print_page(page, i):
     vaddr = to_hex(page[0] * 4096, 12)
     pfn = hex(page[1])
     entry = to_hex(page[2], 16)
-    print("Virtual addr = {} || Page Table Entry = {} || Page Frame Number = {} ".format(vaddr, entry, pfn))
+    print("{}. Virtual addr = {} || Page Table Entry = {} || Page Frame Number = {} ".format(i+1, vaddr, entry, pfn))
 
 
 # Guarantee that a hex number will have the zeros on the right
