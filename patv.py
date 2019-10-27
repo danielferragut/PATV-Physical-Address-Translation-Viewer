@@ -87,7 +87,7 @@ def main():
 
 
 # Helper functions down below
-# Some of the helper functions were inspired by https://bit.ly/33WyIQn
+# Some of these helper functions were inspired by https://bit.ly/33WyIQn
 
 # Given a path to the /proc/[pid]/maps and a offset (and page table entry size)
 # read_entry seeks the files, finds its bytes
