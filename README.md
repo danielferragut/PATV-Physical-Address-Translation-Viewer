@@ -2,7 +2,7 @@
 2nd project for the 'Operating System' course.
 Given a pid, this python program finds all the memory pages that this process has, and checks how many are in RAM or not, while also printing their page table entries and page frame number.
 
-Further explanation and context can be found [here (in portuguese)](https://lasca.ic.unicamp.br/paulo/courses/so/2019s2/exp/exp02.html).
+Further explanation and context can be found [here (in portuguese)](https://lasca.ic.unicamp.br/paulo/courses/so/2019s2/exp/exp03.html).
 
 <!-- ## Getting Started
 
@@ -17,7 +17,7 @@ You are going to need *Python 3* to run this code.
 First, clone this repository to your PC:
 
 ```
-git clone https://github.com/danielferragut/BAT-Manager
+git clone https://github.com/danielferragut/PATV-Physical-Address-Translation-Viewer/
 ```
 
 Change directories to the new *PATV-Physical-Address-Translation-Viewer* directory created.
