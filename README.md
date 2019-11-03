@@ -26,7 +26,7 @@ To run, just type:
 ```
 python3 patv.py [pid]
 ```
-[pid] being the desired process id for the desired process. *Sudo* is necessary, otherwise the page frame number for pages in RAM is going to be 0x0.
+[pid] being the process id for the desired process. *Sudo* is necessary, otherwise the page frame number for pages in RAM is going to be 0x0.
 
 
 <!-- ## Built With
